@@ -1,0 +1,55 @@
+{
+  "menu": [
+    {
+      "name": "Blog Posts",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "Blog Posts",
+      "submenu": [
+        {
+          "url": "/",
+          "icon": "menu-icon tf-icons ti ti-chart-pie-2",
+          "name": "View Blog Posts",
+          "slug": "View Blog Posts"
+        },
+        {
+          "url": "dashboard/crm",
+          "name": "Create Blog Posts",
+          "icon": "menu-icon tf-icons ti ti-3d-cube-sphere",
+          "slug": "Create Blog Posts"
+        },
+        {
+          "url": "dashboard/ecommerce",
+          "name": "Manage Blog Posts",
+          "icon": "menu-icon tf-icons ti ti-atom-2",
+          "slug": "Manage Blog Posts"
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "Users",
+      "submenu": [
+        {
+          "url": "layouts/without-menu",
+          "name": "View Users",
+          "icon": "menu-icon tf-icons ti ti-menu-2",
+          "slug": "View Users"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "Contact Us",
+      "submenu": [
+        {
+          "url": "contact",
+          "name": "Contact Us",
+          "icon": "menu-icon tf-icons ti ti-menu-2",
+          "slug": "Contact Us"
+        }
+      ]
+    }
+  ]
+}
