@@ -44,8 +44,10 @@ class HomeController extends Controller
         }
         else
         {
-            $posts =user::all();
-            return view('adminhome',compact('posts'));
+            $admins =user::where('role','admin')->get();
+            $donors = User::where('role','Blood Donor')->get();
+            $needers = User::where('role','Blood Needer')->get();
+            return view('adminhome',compact('admins','donors','needers'));
         }
 
     }
