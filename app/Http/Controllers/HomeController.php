@@ -140,6 +140,12 @@ class HomeController extends Controller
         return view('adminUserUpdate',compact('user'));
     }
 
+    public function userRate()
+    {
+        $rates = ratings::all();
+        return view('userRatings',compact('rates'));
+    }
+
 }
 
 

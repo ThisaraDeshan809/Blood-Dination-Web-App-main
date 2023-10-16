@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\donerlist;
+use App\Models\ratings;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
@@ -14,7 +15,7 @@ class admincontroller extends Controller
     {
         User::findOrfail($id)->delete();
 
-        return redirect(route('dashboard'));
+        return redirect(route('index'));
     }
 
     public function postdelete($id)
@@ -31,4 +32,14 @@ class admincontroller extends Controller
         return redirect(route('index'));
     }
 
+    public function updateDonorRate($id , Request $request)
+    {
+        ratings::findOrFail($id)->update([
+            'userId' => auth()->user()->id,
+            'raterId' => $id,
+            'rating' => $request->input('rate'),
+            'review' => $request->input('reviewComment')
+        ]);
+        return redirect(route('admin.UserRate'));
+    }
 }

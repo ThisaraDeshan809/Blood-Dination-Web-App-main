@@ -73,6 +73,10 @@ Route::post('/update-User/{id}',[admincontroller::class,'updateAdmin'])->name('u
 
 Route::get('userUpdate/{id}',[HomeController::class,'updateUserView'])->name('updateUser.admin');
 
+Route::get('/adminUserRate',[HomeController::class,'userRate'])->name('admin.UserRate');
+
+Route::post('/updateDonorRate/{id}',[admincontroller::class,'updateDonorRate'])->name('updateDonorRate');
+
 
 
 $controller_path = 'App\Http\Controllers';

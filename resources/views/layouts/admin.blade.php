@@ -28,6 +28,7 @@
 
             <li><a style="text-shadow: 4px 4px 10px #000000;" href="{{route('index')}}">System Users</a></li>
             <li><a style="text-shadow: 4px 4px 10px #000000;" href="{{route('admindonerposts')}}">System Blood Donate Posts</a></li>
+            <li><a style="text-shadow: 4px 4px 10px #000000;" href="{{route('admin.UserRate')}}">User Ratings</a></li>
 
         </ul>
 
