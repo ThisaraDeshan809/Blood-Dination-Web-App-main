@@ -23,4 +23,12 @@ class admincontroller extends Controller
 
         return redirect(route('admindonerposts'));
     }
+
+    public function updateAdmin($id , Request $request)
+    {
+        User::findOrFail($id)->update($request->all());
+
+        return redirect(route('index'));
+    }
+
 }

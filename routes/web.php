@@ -69,6 +69,10 @@ route::get('doner-Ratings/{id}',[HomeController::class,'donerRatings'])->name('d
 
 route::post('/addRating/{id}',[ratingController::class,'addRating'])->name('addRating');
 
+Route::post('/update-User/{id}',[admincontroller::class,'updateAdmin'])->name('updateUser');
+
+Route::get('userUpdate/{id}',[HomeController::class,'updateUserView'])->name('updateUser.admin');
+
 
 
 $controller_path = 'App\Http\Controllers';

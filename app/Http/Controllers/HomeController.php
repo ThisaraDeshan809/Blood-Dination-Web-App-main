@@ -134,6 +134,12 @@ class HomeController extends Controller
         return view('donerRatings',compact('user','ratingAvg','value5','value4','value3','value2','value1','posts'));
     }
 
+    public function updateUserView($id)
+    {
+        $user = User::findOrFail($id);
+        return view('adminUserUpdate',compact('user'));
+    }
+
 }
 
 

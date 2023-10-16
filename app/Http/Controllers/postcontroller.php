@@ -69,6 +69,4 @@ class postcontroller extends Controller
         return redirect(route('neederhome'))->with('success','Sent Message Successfully. Thank You! ');
       }
 
-
-
 }

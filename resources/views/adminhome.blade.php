@@ -23,7 +23,10 @@
                         <td>{{$admin->id}}</td>
                         <td>{{$admin->name}}</td>
                         <td>{{$admin->role}}</td>
-                        <td><a href="{{route('delete',$admin->id)}}" style="width:100%;" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a></td>
+                        <td>
+                            <a href="{{route('updateUser.admin',$admin->id)}}" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Update</a>
+                            <a href="{{route('delete',$admin->id)}}" type="button" class="btn btn-danger btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>
@@ -49,7 +52,10 @@
                         <td>{{$donor->id}}</td>
                         <td>{{$donor->name}}</td>
                         <td>{{$donor->role}}</td>
-                        <td><a href="{{route('delete',$donor->id)}}" style="width:100%;" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a></td>
+                        <td>
+                            <a href="{{route('updateUser.admin',$donor->id)}}" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Update</a>
+                            <a href="{{route('delete',$donor->id)}}" type="button" class="btn btn-danger btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>
@@ -75,7 +81,10 @@
                         <td>{{$needer->id}}</td>
                         <td>{{$needer->name}}</td>
                         <td>{{$needer->role}}</td>
-                        <td><a href="{{route('delete',$needer->id)}}" style="width:100%;" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a></td>
+                        <td>
+                            <a href="{{route('updateUser.admin',$needer->id)}}" type="button" class="btn btn-primary btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Update</a>
+                            <a href="{{route('delete',$needer->id)}}" type="button" class="btn btn-danger btn-sm mb-2" data-toggle="modal" data-target="#bd-example-modal-lg">Delete</a>
+                        </td>
                     </tr>
                     @endforeach
                     </tbody>
