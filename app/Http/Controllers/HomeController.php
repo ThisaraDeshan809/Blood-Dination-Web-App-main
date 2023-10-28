@@ -146,6 +146,15 @@ class HomeController extends Controller
         return view('userRatings',compact('rates'));
     }
 
+    public function viewDonor($id)
+    {
+        $donor = donerlist::where('userid', $id)->first();
+        $values = ratings::where('raterId',$id)->pluck('rating');
+        $ratingAvg = $values->avg();
+
+        return view('viewDonor',compact('donor','ratingAvg'));
+    }
+
 }
 
 
