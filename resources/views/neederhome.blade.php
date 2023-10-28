@@ -47,7 +47,7 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 style="color: #000000; text-shadow: 4px 4px 10px #000000; ">Blood Donors Locations On Map</h1>
+            <h1 style="color: #000000; text-shadow: 4px 4px 10px #000000; ">Blood Bank Locations On Map</h1>
 
             <div class="mb-4" id="map">
 
@@ -126,14 +126,6 @@ function initMap() {
                 {lat: 6.705574, lng: 80.384734, title: 'Blood Bank ,  Rathnapura'},
                 {lat: 8.592200, lng: 81.196793, title: 'Blood Bank ,  Trincomalee'},
                 {lat: 5.9475544, lng: 80.5489361, title: 'Blood Bank ,  Matara'},
-
-                {lat: 5.9475544, lng: 80.7489361, title: 'Thisara (o+)'},
-                {lat: 6.949717, lng: 80.789107, title: 'Danushka (B+)'},
-                {lat: 8.7381572, lng: 80.47714719999999, title: 'Jaliya (AB)'},
-                {lat: 6.906079, lng: 79.969628, title: 'Vindya (A-)'},
-                {lat: 7.087310, lng: 80.014366, title: 'Sanduni (O-)'},
-
-
                 // Add more locations here
             ];
 
@@ -143,8 +135,8 @@ locations.forEach(function(location) {
     var marker = new google.maps.Marker({
         position: location,
         map: map,
-        title: location.title
-        /* icon: 'https://maps.google.com/mapfiles/ms/icons/hospitals.png' */
+        title: location.title,
+        icon: '{{asset('img/icons8-blood-donation-64.png')}}'
     });
 
     google.maps.event.addListener(marker, "rightclick", function() {

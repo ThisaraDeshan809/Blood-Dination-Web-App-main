@@ -62,12 +62,13 @@
 
           var map = new google.maps.Map(document.getElementById('map'), {
                 center: {lat: latitude, lng: longitude, title: 'Your Location'},
-                zoom: 13,
+                zoom: 14,
             });
 
             var marker = new google.maps.Marker({
-        position: {lat: latitude, lng: longitude},
+        position: {lat: latitude, lng: longitude, title:location},
         map: map,
+        icon: '{{asset('img/icons8-blood-donation-48.png')}}'
     });
 
           // Do something with the latitude and longitude, e.g., display it on the page
